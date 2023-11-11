@@ -3,3 +3,4 @@ django-configurations==2.5
 Pillow==10.1.0
 python-decouple==3.8
 sorl-thumbnail==12.10.0
+strawberry-graphql-django==0.24.1

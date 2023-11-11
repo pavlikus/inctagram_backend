@@ -115,6 +115,17 @@ class Base(Configuration):
 
 
 class Development(Base):
+    INSTALLED_APPS: list[str] = [
+        *Base.INSTALLED_APPS,
+        "debug_toolbar",
+        "strawberry_django",
+    ]
+
+    MIDDLEWARE: list[str] = [
+        *Base.MIDDLEWARE,
+        "strawberry_django.middlewares.debug_toolbar.DebugToolbarMiddleware",
+    ]
+
     EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
     INTERNAL_IPS: list[str] = ["127.0.0.1", "localhost"]
