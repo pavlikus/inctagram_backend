@@ -29,6 +29,7 @@ class Base(Configuration):
         "django.contrib.sessions",
         "django.contrib.messages",
         "django.contrib.staticfiles",
+        "accounts",
     ]
 
     MIDDLEWARE: list[str] = [
@@ -88,6 +89,8 @@ class Base(Configuration):
             "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",  # noqa: E501
         },
     ]
+
+    AUTH_USER_MODEL = "accounts.User"
 
     # Internationalization
     # https://docs.djangoproject.com/en/4.2/topics/i18n/
