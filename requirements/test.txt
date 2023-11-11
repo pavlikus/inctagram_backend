@@ -1,0 +1,8 @@
+-r base.txt
+
+mixer
+dlint
+pytest-cov
+pytest-django
+pytest-ordering
+tox

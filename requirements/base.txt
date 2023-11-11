@@ -1,0 +1,5 @@
+Django==4.2.7
+django-configurations==2.5
+Pillow==10.1.0
+python-decouple==3.8
+sorl-thumbnail==12.10.0
